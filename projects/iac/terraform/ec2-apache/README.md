@@ -40,6 +40,16 @@ terraform apply -var='public_key=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAA... you@hos
 - The current example does not configure TLS or DNS. Access the page with `http://<public_ip>` after deployment.
 - This showcase copy intentionally excludes `.tfstate`, provider caches, and private key material.
 
+## Cleanup
+
+Terraform will continue to manage billable AWS resources until you destroy them. When you are done with the example, run:
+
+```bash
+terraform destroy -var='public_key=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAA... you@host'
+```
+
+If you used `terraform.tfvars`, a plain `terraform destroy` is enough.
+
 ## Optional terraform.tfvars
 
 ```hcl
