@@ -3,3 +3,7 @@ __pycache__/
 .DS_Store
 .codex
 .codex/
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan

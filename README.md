@@ -1,8 +1,8 @@
 # Project Showcase
 
-This repository is a curated collection of programming projects that showcase my work across Python applications, small games, utilities, graphics exercises, and notebook-based AI coursework.
+This repository is a curated collection of programming projects that showcase my work across Python applications, small games, utilities, graphics exercises, infrastructure-as-code examples.
 
-The current projects are all Python-based and were selected from earlier learning repositories, then reorganized into a single portfolio so they are easier to review as code samples. Over time, this repo will also include AI and API exercises built in Python notebooks.
+The current projects are primarily Python-based and were selected from earlier learning repositories, then reorganized into a single portfolio so they are easier to review as code samples. Over time, this repo will also include additional infrastructure automation examples and AI/API exercises built in Python notebooks.
 
 ## Skills Demonstrated
 
@@ -12,6 +12,8 @@ The current projects are all Python-based and were selected from earlier learnin
 - Game and application state management
 - Working with files and supporting modules
 - Simple GUI and graphics with `turtle`
+- Infrastructure as code with Terraform
+- Basic AWS provisioning and cloud-init bootstrapping
 
 ## Featured Projects
 
@@ -26,6 +28,7 @@ The current projects are all Python-based and were selected from earlier learnin
 | `turtle-race` | Graphics | Interactive turtle-race game with user input and randomized movement. | `python3 projects/graphics/turtle-race/turtle_race.py` |
 | `snake-game` | Graphics | Snake game with collision detection, score tracking, and keyboard controls. | `python3 projects/graphics/snake-game/main.py` |
 | `pong` | Graphics | Pong clone built with object-oriented components and keyboard controls. | `python3 projects/graphics/pong/pong.py` |
+| `ec2-apache` | IaC / Terraform | Provisions an AWS EC2 instance and bootstraps Apache with cloud-init. | `cd projects/iac/terraform/ec2-apache && terraform init && terraform apply` |
 
 ## Repository Structure
 
@@ -34,6 +37,8 @@ projects/
   cli-games/
   utilities/
   graphics/
+  iac/
+    terraform/
 ```
 
 ## Notes
@@ -41,3 +46,4 @@ projects/
 - These examples use the Python standard library. The graphics projects use `turtle`, which requires a desktop environment.
 - Each project folder includes a short README with context and run instructions.
 - A few folders also include closely related alternate implementations or practice sketches that are documented in their local README files.
+- Infrastructure examples are organized under `projects/iac/` so additional tools such as CDK can be added later without reshaping the repo.
